@@ -9,7 +9,7 @@
 ## Script Description: This script will try to add users to be authorized pre-boot users when FV2 is enabled.
 ##
 ##
-## This script uses the application called CocoaDialog, which gives shell scripts a GUI interface, so as to allow all users to be able to interact with the script. This can be found at http://mstratman.github.io/cocoadialog/
+## NOTE: This script uses the application called CocoaDialog, which gives shell scripts a GUI interface, so as to allow all users to be able to interact with the script. This can be found at http://mstratman.github.io/cocoadialog/
 ####################################################################
 
 #### Things to add in the future:
