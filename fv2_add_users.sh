@@ -51,6 +51,21 @@ echo $CD
 ######################
 
 
+## This script requires being run by root, so before doing anything, we need to make sure this is true
+checkIfRoot() {
+	## Make sure only root can run the script
+	if [[ $EUID -ne 0 ]]; then
+	   echo "\nThis script must be run as root. You shall not pass...\n" 1>&2
+	   sleep 2;
+	   exit 1;
+	else
+		echo "\nYOU ARE ROOT!! You may enter...\n"
+		sleep 2;
+	fi
+}
+checkIfRoot;
+
+
 ## sets 'i'  for the while loop
 i=0
 
